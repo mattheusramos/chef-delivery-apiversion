@@ -38,9 +38,9 @@ struct ContentView: View {
             }
         }
         .onAppear() {
-//            Task {
-//                await getStores()
-//            }
+            Task {
+                await getStores()
+            }
             getStoresWithAlamofire()
         }
     }

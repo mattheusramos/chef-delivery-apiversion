@@ -31,7 +31,6 @@
 		48A230D92A2C097400431A41 /* ProductDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A230D82A2C097400431A41 /* ProductDetailHeaderView.swift */; };
 		48A230DB2A2C098000431A41 /* ProductDetailQuantityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A230DA2A2C098000431A41 /* ProductDetailQuantityView.swift */; };
 		78BDE0622FEAA7AB0082EC27 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 78BDE0612FEAA7AB0082EC27 /* Alamofire */; };
-		78BDE0642FEAA7AB0082EC27 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 78BDE0632FEAA7AB0082EC27 /* AlamofireDynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,7 +70,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				78BDE0622FEAA7AB0082EC27 /* Alamofire in Frameworks */,
-				78BDE0642FEAA7AB0082EC27 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,11 +517,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 78BDE0602FEAA7AB0082EC27 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		78BDE0632FEAA7AB0082EC27 /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 78BDE0602FEAA7AB0082EC27 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

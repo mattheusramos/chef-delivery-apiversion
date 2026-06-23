@@ -14,19 +14,19 @@ enum RequestError: Error {
 }
 
 struct HomeServce {
-//    func fetchData() async throws -> Result<[StoreType], RequestError> {
-//        guard let url = URL(string: "https://private-2d7a50-matheusramos.apiary-mock.com/home") else {
-//            return .failure(.invalidURL)
-//        }
-//        
-//        var request = URLRequest(url: url)
-//        request.httpMethod = "GET"
-//        
-//        let (data, _) = try await URLSession.shared.data(for: request)
-//        let storesObjects = try JSONDecoder().decode([StoreType].self, from: data)
-//        
-//        return .success(storesObjects)
-//    }
+    func fetchData() async throws -> Result<[StoreType], RequestError> {
+        guard let url = URL(string: "https://private-2d7a50-matheusramos.apiary-mock.com/home") else {
+            return .failure(.invalidURL)
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        
+        let (data, _) = try await URLSession.shared.data(for: request)
+        let storesObjects = try JSONDecoder().decode([StoreType].self, from: data)
+        
+        return .success(storesObjects)
+    }
     
     func fetchDataWithAlamofire(completion: @escaping ([StoreType]?, Error?) -> Void) {
         AF.request("https://private-2d7a50-matheusramos.apiary-mock.com/home").responseDecodable(of:
